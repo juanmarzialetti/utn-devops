@@ -1,5 +1,5 @@
 # Archivos y carpetas de Vagrant
-.vagrant/
+*.vagrant/
 *.log
 
 # Claves SSH generadas por Vagrant

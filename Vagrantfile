@@ -88,6 +88,8 @@ Vagrant.configure("2") do |config|
     apt-get install -y apache2
     sudo chmod 775 /var/www/html
     sudo chown -R vagrant:vagrant /var/www/html
-    sudo cp /vagrant/index.html /var/www/html/index.html 
+    sudo cp /vagrant/index.html /var/www/html/index.html
+    git clone https://github.com/juanmarzialetti/utn-devops/tree/unidad-1-vagrant /var/www/html
+
 SHELL
 end

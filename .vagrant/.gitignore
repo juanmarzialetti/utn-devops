@@ -1,0 +1,21 @@
+# Archivos y carpetas de Vagrant
+.vagrant/
+*.log
+
+# Claves SSH generadas por Vagrant
+*.pem
+*.pub
+
+# Archivos de configuración de VirtualBox
+VirtualBox VMs/
+*.vbox
+*.vbox-prev
+
+# Archivos de swap y temporales del sistema
+*.swp
+*.swo
+*~
+
+# Archivos de caché del sistema
+.DS_Store
+Thumbs.db

@@ -26,7 +26,6 @@ Vagrant.configure("2") do |config|
   # NOTE: This will enable public access to the opened port
   config.vm.network "forwarded_port", guest: 80, host: 8080
   config.vm.hostname = "utn-devops.localhost"
-  config.vm.boot_timeout = 3600
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine and only allow access
@@ -54,7 +53,6 @@ Vagrant.configure("2") do |config|
   # If you use this you may want to enable additional shared subfolders as
   # shown above.
   # config.vm.synced_folder ".", "/vagrant", disabled: true
-  config.vm.synced_folder ".", "/vagrant"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
@@ -89,7 +87,5 @@ Vagrant.configure("2") do |config|
     sudo chmod 775 /var/www/html
     sudo chown -R vagrant:vagrant /var/www/html
     sudo cp /vagrant/index.html /var/www/html/index.html
-    # git clone https://github.com/juanmarzialetti/utn-devops/tree/unidad-1-vagrant /var/www/html
-
 SHELL
 end
